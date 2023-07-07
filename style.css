@@ -19,7 +19,7 @@
     --Medium-Grey: hsl(216, 12%, 54%);
     --Dark-Blue: hsl(213, 19%, 18%);
     --Very-Dark-Blue: hsl(216, 12%, 8%);
-    --desaturated-blue: hsla(216, 12%, 54%, 0.18);
+    --desaturated-blue: hsla(216, 12%, 54%, 0.107);
 
     --f-size: 15px
 
@@ -42,16 +42,19 @@ body {
 }
 
 .rating-card {
-    background-color: var(--Dark-Blue);
+    background-color: hsla(216, 15%, 19%, 0.315);
     border-radius: 1em;
-    padding: 1.5em;
+    padding: 2em;
     color: var(--White);
     position: relative;
-    /* display: none; */
+}
+
+.star-icon img {
+    margin-bottom: 1em;
 }
 
 .title {
-    padding-block: .75em;
+    padding-block: .65em;
 }
 
 .descriptions {
@@ -72,7 +75,7 @@ body {
     font-family: inherit;
     color: var(--White);
     background-color: hsla(216, 12%, 54%, 0.18);
-    padding: 1em .75em 1em .75em;
+    padding: .95em .75em .95em .75em;
     width: 13.5%;
     border-radius: 50%;
     cursor: pointer;
@@ -91,6 +94,7 @@ body {
 .submit-button {
     padding-top: 1.5rem;
     text-align: center;
+    display: none;
 }
 
 .submit-button button {
@@ -118,21 +122,16 @@ body {
     display: block;
     text-align: center;
     padding: 2em;
-    background-color: var(--Dark-Blue);
+    background-color: hsla(216, 15%, 19%, 0.315);
     border-radius: 1em;
     padding-inline: 2.75em;
     display: none;
 }
 
 .rating-result {
-    padding-block: 2em;
-}
-
-.rating-result span {
-    background-color: var(--desaturated-blue);
-    color: var(--Orange);
-    padding: .35em .75em;
-    border-radius: 2em;
+    margin-block: 1.5em;
+    padding-block: .45em;
+    margin-inline: 3em;
 }
 
 .thank-you-title {
@@ -147,6 +146,25 @@ body {
     color: var(--Medium-Grey);
 }
 
-.thank-you-card .active {
-    display: block;
+.edit-btn button {
+    color: var(--White);
+    background-color: var(--Orange);
+    border: none;
+    font-family: inherit;
+    text-transform: uppercase;
+    padding-block: 1em;
+    padding-inline: 10em;
+    margin-block: 1.5em;
+    border-radius: 2em;
+    font-weight: 700;
+    letter-spacing: .15rem;
+    outline: none;
+    cursor: pointer;
+    transition: 200ms ease-in-out;
 }
+
+.edit-btn button:hover {
+    color: var(--Orange);
+    background-color: var(--White);
+}
+
