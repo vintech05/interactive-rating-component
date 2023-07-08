@@ -13,6 +13,7 @@ const numFive = document.querySelector('.num-5')
 submitBtn.addEventListener('click', (e) => {
     thanksCards.style.display = 'block'
     ratingCards.style.display = 'none'
+
     ratingResult.style.color = 'hsl(25, 97%, 53%)'
     ratingResult.style.backgroundColor = 'hsla(216, 12%, 54%, 0.107)'
     ratingResult.style.borderRadius = '2em'
@@ -36,6 +37,7 @@ numOne.addEventListener('click', (e) => {
 numTwo.addEventListener('click', (e) => {
     ratingResult.textContent = 'You selected 2 out of 5'
     ratingResult.style.color = 'white'
+    
     submitBtn.style.display = 'block'
 
     title.textContent = 'Bad'
